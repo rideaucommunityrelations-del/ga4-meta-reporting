@@ -1,0 +1,12 @@
+{
+  "name": "marketing-mcp-server",
+  "version": "1.0.0",
+  "description": "MCP server exposing GA4, Meta Ads, and Search Console data as tools for Claude",
+  "type": "module",
+  "main": "index.js",
+  "dependencies": {
+    "@modelcontextprotocol/server": "^2.0.0",
+    "dotenv": "^16.4.5",
+    "zod": "^4.0.0"
+  }
+}

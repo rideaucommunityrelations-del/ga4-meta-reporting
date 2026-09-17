@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Marketing Command Center</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div id="boot-screen">
+    <div class="boot-grid"></div>
+    <div class="boot-content">
+      <div class="boot-title">MARKETING COMMAND CENTER</div>
+      <ul id="boot-log" class="boot-log"></ul>
+    </div>
+  </div>
+
+  <main id="dashboard" class="hidden">
+    <header class="topbar">
+      <h1>Marketing Command Center</h1>
+      <span id="range-label" class="range-label"></span>
+    </header>
+
+    <div id="ai-summary" class="ai-summary hidden">
+      <span class="ai-tag">AI SUMMARY</span>
+      <p id="ai-summary-text"></p>
+    </div>
+
+    <section class="kpi-grid" id="kpi-grid"></section>
+
+    <section class="panel trend-panel">
+      <h2>30-Day Trend</h2>
+      <svg id="trend-chart" viewBox="0 0 800 160" preserveAspectRatio="none"></svg>
+      <div class="trend-legend">
+        <span><i class="dot ga4"></i> Sessions</span>
+        <span><i class="dot meta"></i> Ad Spend</span>
+      </div>
+    </section>
+
+    <section class="panels">
+      <div class="panel" id="channels-panel">
+        <h2>Top Channels <span class="tag ga4">GA4</span></h2>
+        <div class="bars" id="channels-bars"></div>
+      </div>
+
+      <div class="panel" id="campaigns-panel">
+        <h2>Top Campaigns <span class="tag meta">META</span></h2>
+        <div class="bars" id="campaigns-bars"></div>
+      </div>
+
+      <div class="panel" id="ads-panel">
+        <h2>Top Ads <span class="tag meta">META</span></h2>
+        <ul class="list" id="ads-list"></ul>
+      </div>
+
+      <div class="panel" id="queries-panel">
+        <h2>Top Search Queries <span class="tag gsc">GSC</span></h2>
+        <ul class="list" id="queries-list"></ul>
+      </div>
+
+      <div class="panel small" id="device-panel">
+        <h2>Device <span class="tag ga4">GA4</span></h2>
+        <div class="bars" id="device-bars"></div>
+      </div>
+
+      <div class="panel small" id="nvr-panel">
+        <h2>New vs Returning <span class="tag ga4">GA4</span></h2>
+        <div class="bars" id="nvr-bars"></div>
+      </div>
+
+      <div class="panel small" id="geo-panel">
+        <h2>Top Countries <span class="tag ga4">GA4</span></h2>
+        <ul class="list" id="geo-list"></ul>
+      </div>
+
+      <div class="panel" id="pages-panel">
+        <h2>Top Landing Pages <span class="tag ga4">GA4</span></h2>
+        <ul class="list" id="pages-list"></ul>
+      </div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
